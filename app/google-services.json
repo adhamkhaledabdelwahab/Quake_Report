@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "523415342659",
+    "project_id": "quake-report-cc820",
+    "storage_bucket": "quake-report-cc820.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523415342659:android:5422cd117be16954e14ef6",
+        "android_client_info": {
+          "package_name": "kh.ad.quakereport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523415342659-eb262ic1ra0fo7lsoqng8katjde77r63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAPhpk9uTESsZ39kUdyveg7i5VjC9lhfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523415342659-eb262ic1ra0fo7lsoqng8katjde77r63.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
