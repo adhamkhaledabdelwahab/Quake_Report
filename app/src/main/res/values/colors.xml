@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#CFCFCF</color>
 
     <!-- Color for an earthquake with magnitude 0 and 2 -->
     <color name="magnitude1">#4A7BA7</color>

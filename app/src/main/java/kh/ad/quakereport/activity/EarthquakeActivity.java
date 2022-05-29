@@ -31,6 +31,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -75,6 +76,7 @@ public class EarthquakeActivity extends AppCompatActivity {
     TextView empty;
     ProgressBar wait;
     SwipeRefreshLayout swipe;
+    FloatingActionButton contactForm;
 
     Retrofit.Builder builder = new Retrofit.Builder()
             .baseUrl(USGS_REQUEST_URL)
@@ -98,6 +100,7 @@ public class EarthquakeActivity extends AppCompatActivity {
         empty = binding.emptyList;
         wait = binding.w8Internet;
         swipe = binding.refreshOnScroll;
+        contactForm = binding.floatActionContactForm;
 
         wait.setVisibility(View.VISIBLE);
         empty.setVisibility(View.INVISIBLE);
@@ -127,6 +130,11 @@ public class EarthquakeActivity extends AppCompatActivity {
                 Toast.makeText(EarthquakeActivity.this, "No Internet Connection, please reconnect internet and try again", Toast.LENGTH_LONG).show();
                 swipe.setRefreshing(false);
             }
+        });
+
+        contactForm.setOnClickListener(v -> {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://answers.usgs.gov"));
+            startActivity(browserIntent);
         });
     }
 
