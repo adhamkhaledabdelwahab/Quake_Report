@@ -23,12 +23,12 @@
                 android:title="@string/contactInfo_menu_item"
                 app:showAsAction="always" />
 
-            <item
-                android:id="@+id/action_contactForm"
-                android:icon="@drawable/ic_email"
-                android:orderInCategory="3"
-                android:title="@string/contactForm_menu_item"
-                app:showAsAction="always" />
+<!--            <item-->
+<!--                android:id="@+id/action_contactForm"-->
+<!--                android:icon="@drawable/ic_email"-->
+<!--                android:orderInCategory="3"-->
+<!--                android:title="@string/contactForm_menu_item"-->
+<!--                app:showAsAction="always" />-->
         </menu>
     </item>
 </menu>

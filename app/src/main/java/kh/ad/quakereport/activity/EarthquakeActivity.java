@@ -155,11 +155,12 @@ public class EarthquakeActivity extends AppCompatActivity {
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.usgs.gov/about/congressional/contacts"));
             startActivity(browserIntent);
             return true;
-        } else if (id == R.id.action_contactForm) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://answers.usgs.gov"));
-            startActivity(browserIntent);
-            return true;
         }
+//        else if (id == R.id.action_contactForm) {
+//            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://answers.usgs.gov"));
+//            startActivity(browserIntent);
+//            return true;
+//        }
         return super.onOptionsItemSelected(item);
     }
 
